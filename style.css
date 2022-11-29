@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    background: rgb(7, 47, 107);
+    padding: 1.2rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 0.85rem;
+}
+
+nav .right {
+    display: none;
+}
+
+.det {
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    background: rgb(7, 47, 107);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 1rem;
+}
+
+.det span:first-child {
+    font-size: 0.85rem;
+}
+
+.det span:last-child {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.about,
+.projects, .different, .experience, .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    font-size: 0.85rem;
+}
+
+.about span,
+.projects span, .different span, .experience span, .skills span {
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.projects p, .different p, .skills p {
+    text-align: center !important;
+}
+
+.projects, .experience {
+    color: white;
+    background: rgb(7, 47, 107);
+}
+
+.about p {
+    text-align: justify;
+}
+
+.grid, .list {
+    display: grid;
+    margin: 2rem 0;
+    gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.grid .card {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    align-items: center;
+}
+
+.grid .card span {
+    margin: 1rem 0;
+}
+
+.grid .card button {
+    margin: 1rem 0;
+    padding: 0.5rem 0.8rem;
+    background: rgb(7, 47, 107);
+    border: none;
+    color: white;
+    border-radius: 10rem;
+    cursor: pointer;
+}
+
+.grid .card button:hover {
+    background: white;
+    color: rgb(7, 47, 107);
+}
+
+.different .grid .card {
+    align-items: flex-start;
+}
+
+.different .grid .card p {
+    text-align: left !important;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.skill span{
+    margin-bottom: 0.5rem;
+}
+
+.skill .progressBar {
+    height: 0.35rem;
+    border-radius: 10rem;
+    background: silver;
+    width: 100% !important;
+}
+
+.skill .title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+
+.skill .progress {
+    background: rgb(7, 47, 107);
+    height: 100%;
+    border-radius: 10rem;
+}
+
+.Branding {
+    width: 85%;
+}
+
+.Visual  {
+    width: 95%;
+}
+
+.Storyboarding {
+    width: 80%;
+}
+
+.Strategy {
+    width: 75%;
+}
+
+.list p {
+    font-size: 0.8rem;
+}
+
+.social {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social i {
+    font-size: 1.2rem;
+    color: rgb(7, 47, 107);
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.social i:hover {
+    color: black;
+}
+
+
+@media (min-width: 768px) {
+    nav span {
+        cursor: pointer;
+    }
+
+    nav span:hover {
+        text-decoration: underline;
+    }
+
+    nav .right {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    nav .right span:last-child {
+        border: 0.13rem solid white;
+        padding: 0.2rem 0.5rem;
+        border-radius: 1rem;
+    }
+
+    nav .right span:last-child:hover {
+        text-decoration: none;
+        background: white;
+        color: rgb(7, 47, 107);
+    }
+
+    .about,
+    .projects, .different, .experience, .skills {
+        padding: 2rem 10rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
